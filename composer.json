@@ -1,0 +1,29 @@
+{
+    "name": "kunci/sso-sdk-php",
+    "description": "SDK Resmi PHP untuk Kunci SSO (OAuth 2.0 PKCE)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kunci Dev Team",
+            "email": "hallo@kunci.co.id"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kunci\\SSO\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kunci\\SSO\\KunciSSOServiceProvider"
+            ]
+        }
+    }
+}
